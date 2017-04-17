@@ -11,9 +11,9 @@
 
   <modules>
     <module>Ex_Minimal</module>
-    <module>Ex_MinimalWithInjection</module>
-    <module>Ex_MinimalClassPathScanning</module>
-    <module>Ex_MinimalXmlBased</module>
+    <module>Ex_MinimalWithJavaConfiguration</module>
+    <module>Ex_MinimalClassPathScanningAndAutowired</module>
+    <module>Ex_MinimalXmlBasedConfiguration</module>
     <module>Ex_LifecycleCallbacks</module>
     <module>Ex_AopBasics</module>
     <module>Ex_AopProxyAndThis</module>
