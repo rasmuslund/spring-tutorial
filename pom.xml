@@ -10,9 +10,10 @@
   <version>1.0-SNAPSHOT</version>
 
   <modules>
-	<module>Ex_Minimal</module>
-<module>Ex_MinimalWithInjection</module>
-<module>Ex_MinimalClassPathScanning</module>
-</modules>
+    <module>Ex_Minimal</module>
+    <module>Ex_MinimalWithInjection</module>
+    <module>Ex_MinimalClassPathScanning</module>
+    <module>Ex_MinimalXmlBased</module>
+  </modules>
 
 </project>
