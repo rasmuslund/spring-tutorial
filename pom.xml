@@ -14,6 +14,7 @@
     <module>Ex_MinimalWithInjection</module>
     <module>Ex_MinimalClassPathScanning</module>
     <module>Ex_MinimalXmlBased</module>
+    <module>Ex_LifecycleCallbacks</module>
   </modules>
 
 </project>
