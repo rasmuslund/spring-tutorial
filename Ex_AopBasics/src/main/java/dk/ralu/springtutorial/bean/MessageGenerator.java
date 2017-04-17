@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Timed
 @Service
+// All the methods is this bean is JOINPOINTS (places that can potentially be selected in a POINTCUT)
 public class MessageGenerator {
 
     @Autowired
