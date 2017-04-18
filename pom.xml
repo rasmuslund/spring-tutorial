@@ -19,6 +19,7 @@
     <module>Ex_AopBasics</module>
     <module>Ex_AopProxyAndThis</module>
     <module>Ex_DataSourceInfrastrutureBean</module>
+    <module>Ex_Profiles</module>
   </modules>
 
 </project>
