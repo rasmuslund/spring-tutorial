@@ -18,8 +18,9 @@
     <module>Ex_LifecycleCallbacks</module>
     <module>Ex_AopBasics</module>
     <module>Ex_AopProxyAndThis</module>
-    <module>Ex_DataSourceInfrastrutureBean</module>
+    <module>Ex_DataSourceInfrastructureBean</module>
     <module>Ex_Profiles</module>
+    <module>Ex_SimpleBootApp</module>
   </modules>
 
 </project>
