@@ -1,14 +1,13 @@
-package dk.ralu.springtutorial;
+package dk.ralu.springtutorial.restapi;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloWorldEndpoint {
+public class FixedMessageEndpoint {
 
-    @RequestMapping("/greeting")
+    @RequestMapping("/messages/fixed")
     public String index() {
-        return "Hello universe!";
+        return "Hello World";
     }
-
 }
