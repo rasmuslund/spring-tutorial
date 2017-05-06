@@ -24,4 +24,9 @@ public class JpaEndpoint {
     public Iterable<Person> useJpaToFindByLastName(@PathVariable("lastName") String lastName) throws SQLException {
          return personRepository.findByLastName(lastName);
     }
+
+    @RequestMapping("/useJpaToFindFullNameById/{id}")
+    public String useJpaToFindFullNameById(@PathVariable("id") Long id) throws SQLException {
+         return personRepository.findFullNameById(id);
+    }
 }
