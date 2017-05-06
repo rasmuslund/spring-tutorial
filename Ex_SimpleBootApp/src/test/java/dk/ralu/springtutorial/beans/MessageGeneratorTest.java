@@ -42,6 +42,6 @@ public class MessageGeneratorTest {
 
     @Test
     public void generateMessage() {
-        Assert.assertEquals("knud", messageGenerator.generateMessage());
+        Assert.assertEquals("GREETING_WORD LOCATION_WORD", messageGenerator.generateMessage());
     }
 }
