@@ -1,7 +1,5 @@
 package dk.ralu.springtutorial.jpa;
 
-import static org.junit.Assert.*;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
