@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
@@ -20,8 +19,7 @@ public class JpaEndpointTest {
 
     @Test
     public void useJpaToFindByLastName() throws Exception {
-        ResponseEntity<Person[]> response = restTemplate.getForEntity("/useJpaToFindByLastName/{lastName}", Person[].class, "Johnson");
-        Person[] persons = response.getBody();
+        Person[] persons = restTemplate.getForObject("/useJpaToFindByLastName/{lastName}", Person[].class, "Johnson");
         Assert.assertEquals(1, persons.length);
         Assert.assertEquals("Rod", persons[0].getFirstName());
     }
