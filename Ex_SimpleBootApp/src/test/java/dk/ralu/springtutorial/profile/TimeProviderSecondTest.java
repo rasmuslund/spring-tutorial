@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class TimeProviderSecondTest {
 
     @Autowired
-    private TimeProvider timeProvider; // <== As we TEST is an active profile, the bean annotated with @Profile("TEST") will be used
+    private TimeProvider timeProvider; // <== As TEST is an active profile, the bean annotated with @Profile("TEST") will be used
 
     @Test
     public void testProdVersionOfTimeProvider() {
