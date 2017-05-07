@@ -24,6 +24,7 @@ public class MessageGeneratorTest {
         @Bean
         RandomWordGenerator fixedRandomWordGenerator() {
             return new RandomWordGenerator() {
+                // This version of RandomWordGenerator returns fixed strings, to make testing of MessageGenerator easier
                 @Override
                 String generateGreetingWord() {
                     return "GREETING_WORD";
