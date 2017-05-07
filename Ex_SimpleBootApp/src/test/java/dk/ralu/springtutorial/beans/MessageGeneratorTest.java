@@ -20,15 +20,17 @@ public class MessageGeneratorTest {
     // Whatever beans this class defines, will be added to the beans that are normally created for our application
     @TestConfiguration
     public static class ExtraTestSpecificBeans {
+
         @Primary // Now two beans of type RandomWordGenerator exist - marking one as primary means it will be the one that gets injected
         @Bean
         RandomWordGenerator fixedRandomWordGenerator() {
+            // This version of RandomWordGenerator returns fixed strings, to make testing of MessageGenerator easier
             return new RandomWordGenerator() {
-                // This version of RandomWordGenerator returns fixed strings, to make testing of MessageGenerator easier
                 @Override
                 String generateGreetingWord() {
                     return "GREETING_WORD";
                 }
+
                 @Override
                 String generateLocationWord() {
                     return "LOCATION_WORD";
