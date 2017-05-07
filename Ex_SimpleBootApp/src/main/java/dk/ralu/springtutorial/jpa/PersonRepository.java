@@ -1,14 +1,14 @@
 package dk.ralu.springtutorial.jpa;
 
 import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 // Spring Data automatically creates an implementation of this interface at startup
 @Repository
-public interface PersonRepository extends PagingAndSortingRepository<Person, Long> {
+public interface PersonRepository extends JpaRepository<Person, Long> {
 
     // Spring Data can implement this method, as the method follows certain naming rules (defines by Spring Data)
     List<Person> findByLastName(String lastName);
