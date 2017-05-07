@@ -17,10 +17,9 @@ public class MessageGeneratorTest {
     @Autowired
     private MessageGenerator messageGenerator; // This bean depends on getting a RandomWordGenerated injected
 
-    // Whatever beans this class defines, will be added to the beans that already exist
+    // Whatever beans this class defines, will be added to the beans that are normally created for our application
     @TestConfiguration
     public static class ExtraTestSpecificBeans {
-
         @Primary // Now two beans of type RandomWordGenerator exist - marking one as primary means it will be the one that gets injected
         @Bean
         RandomWordGenerator fixedRandomWordGenerator() {
