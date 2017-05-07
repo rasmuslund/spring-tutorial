@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class MessageGeneratorTest {
 
     @Autowired
-    private MessageGenerator messageGenerator;
+    private MessageGenerator messageGenerator; // This bean depends on getting a RandomWordGenerated injected
 
     // Whatever beans this class defines, will be added to the beans that already exist
     @TestConfiguration
@@ -25,19 +25,16 @@ public class MessageGeneratorTest {
         @Bean
         RandomWordGenerator fixedRandomWordGenerator() {
             return new RandomWordGenerator() {
-
                 @Override
                 String generateGreetingWord() {
                     return "GREETING_WORD";
                 }
-
                 @Override
                 String generateLocationWord() {
                     return "LOCATION_WORD";
                 }
             };
         }
-
     }
 
     @Test
