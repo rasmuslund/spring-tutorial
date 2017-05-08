@@ -11,7 +11,7 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment= WebEnvironment.RANDOM_PORT) // <== create an embedded web server that listens on a random port
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT) // <== create an embedded web server that listens on a random port
 public class JpaEndpointTest {
 
     @Autowired
