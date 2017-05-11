@@ -24,6 +24,7 @@
     <module>Ex_TestListenerViaFactoriesFile</module>
     <module>Ex_TestListenerViaAnnotation</module>
     <module>Ex_TestListenerViaEvents</module>
+    <module>Ex_TestListenerViaRule</module>
   </modules>
 
 </project>
