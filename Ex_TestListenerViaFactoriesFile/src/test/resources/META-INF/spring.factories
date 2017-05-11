@@ -1,0 +1,2 @@
+org.springframework.test.context.TestExecutionListener=\
+dk.ralu.springtutorial.listener.ActivateCleanupBeansTestExecutionListener

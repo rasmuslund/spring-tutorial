@@ -21,6 +21,8 @@
     <module>Ex_DataSourceInfrastructureBean</module>
     <module>Ex_Profiles</module>
     <module>Ex_SimpleBootApp</module>
+    <module>Ex_TestListenerViaFactoriesFile</module>
+    <module>Ex_TestListenerViaAnnotation</module>
   </modules>
 
 </project>
