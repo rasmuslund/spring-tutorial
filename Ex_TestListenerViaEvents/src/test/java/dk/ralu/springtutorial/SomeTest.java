@@ -7,6 +7,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = SpringConfiguration.class)
+// You can't see on this test, which cleanup beans are going to run between your tests.
+// On the other hand, cleanup just works on all tests, without having to remember to activate them.
 public class SomeTest {
 
     @Test
