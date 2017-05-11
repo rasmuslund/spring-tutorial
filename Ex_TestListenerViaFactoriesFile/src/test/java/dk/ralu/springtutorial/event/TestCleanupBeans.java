@@ -1,4 +1,4 @@
-package dk.ralu.springtutorial.listener;
+package dk.ralu.springtutorial.event;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

@@ -23,6 +23,7 @@
     <module>Ex_SimpleBootApp</module>
     <module>Ex_TestListenerViaFactoriesFile</module>
     <module>Ex_TestListenerViaAnnotation</module>
+    <module>Ex_TestListenerViaEvents</module>
   </modules>
 
 </project>

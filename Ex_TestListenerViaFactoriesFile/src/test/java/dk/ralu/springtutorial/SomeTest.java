@@ -2,7 +2,7 @@ package dk.ralu.springtutorial;
 
 import dk.ralu.springtutorial.bean.CassandraTestCleanupBean;
 import dk.ralu.springtutorial.bean.ElasticsearchTestCleanupBean;
-import dk.ralu.springtutorial.listener.TestCleanupBeans;
+import dk.ralu.springtutorial.event.TestCleanupBeans;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;

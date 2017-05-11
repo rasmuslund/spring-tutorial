@@ -1,4 +1,4 @@
-package dk.ralu.springtutorial.listener;
+package dk.ralu.springtutorial.event;
 
 import org.springframework.test.context.TestContext;
 

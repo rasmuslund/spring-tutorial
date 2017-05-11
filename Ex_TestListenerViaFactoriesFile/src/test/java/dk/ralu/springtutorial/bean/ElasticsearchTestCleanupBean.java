@@ -1,6 +1,6 @@
 package dk.ralu.springtutorial.bean;
 
-import dk.ralu.springtutorial.listener.TestCleanupBean;
+import dk.ralu.springtutorial.event.TestCleanupBean;
 import org.springframework.stereotype.Service;
 import org.springframework.test.context.TestContext;
 
