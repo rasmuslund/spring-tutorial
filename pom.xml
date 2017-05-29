@@ -25,6 +25,7 @@
     <module>Ex_TestListenerViaAnnotation</module>
     <module>Ex_TestListenerViaEvents</module>
     <module>Ex_TestListenerViaRule</module>
+    <module>Ex_LazyInitBeanOnFirstUsage</module>
   </modules>
 
 </project>
