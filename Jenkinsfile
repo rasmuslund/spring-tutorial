@@ -10,9 +10,9 @@ podTemplate(label: 'mypod') {
         stage('build') {
             def mvn_version = 'M3'
             withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] ) {
-                sh 'ls -al'
                 sh 'git --version'
                 sh 'git clone https://github.com/rasmuslund/spring-tutorial.git'
+                sh 'ls -al'
 
                 sh 'mvn clean package'
                 //sh "mvn clean package"
