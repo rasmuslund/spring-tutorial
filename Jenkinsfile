@@ -12,6 +12,8 @@ podTemplate(label: 'mypod') {
             withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] ) {
                 sh 'ls -al'
                 sh 'git --version'
+                sh 'git clone https://github.com/rasmuslund/spring-tutorial.git'
+
                 sh 'mvn clean package'
                 //sh "mvn clean package"
             }
