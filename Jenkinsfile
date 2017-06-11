@@ -8,15 +8,15 @@ podTemplate(label: 'mypod') {
         }
         */
         stage('build') {
-            def mvn_version = 'M3'
-            withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] ) {
+//            def mvn_version = 'M3'
+//            withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] ) {
                 sh 'git --version'
                 sh 'git clone https://github.com/rasmuslund/spring-tutorial.git'
                 sh 'ls -al'
 
-                sh 'mvn clean package'
+                sh 'cd spring-tutorial && ./mvnw clean package'
                 //sh "mvn clean package"
-            }
+//            }
         }
 /*
         stage('build') {
