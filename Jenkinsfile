@@ -10,7 +10,7 @@ podTemplate(label: 'mypod') {
         stage('build') {
             def mvn_version = 'M3'
             withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] ) {
-                sh 'mvn --version'
+                sh 'mvn clean package'
                 //sh "mvn clean package"
             }
         }
