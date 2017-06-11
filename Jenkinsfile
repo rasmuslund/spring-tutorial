@@ -14,7 +14,7 @@ podTemplate(label: 'mypod') {
                 sh 'git clone https://github.com/rasmuslund/spring-tutorial.git'
                 sh 'ls -al'
 
-                sh 'cd spring-tutorial && ./mvnw clean package'
+                sh 'cd spring-tutorial/Ex_SimpleBootApp && ./mvnw clean package'
                 //sh "mvn clean package"
 //            }
         }
