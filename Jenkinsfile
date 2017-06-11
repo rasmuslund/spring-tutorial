@@ -8,7 +8,8 @@ podTemplate(label: 'mypod') {
         }
         */
         stage('build') {
-            sh 'mvn --version'
+            //sh 'mvn --version'
+            sh 'java -version'
         }
     }
 }
